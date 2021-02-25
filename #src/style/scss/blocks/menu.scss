@@ -1,0 +1,43 @@
+
+.menu{
+
+  .nav-item{
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 29px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  .nav-link{
+    color: $white;
+    transition: 0.2s color;
+    padding: 0;
+  }
+
+  .nav-link:hover{
+    color: $gold;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .menu{
+
+    .nav-link{
+      color: $white;
+      transition: 0.2s color;
+      padding-bottom: 10px;
+    }
+
+  }
+}
+
+

@@ -1,0 +1,164 @@
+
+.staging{
+  background-color: $black;
+  padding-bottom: 80px;
+
+  &-title{
+    @extend %title;
+    margin-bottom: 60px;
+  }
+
+  &-list{
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    margin: 0 33px;
+  }
+
+  &-item{
+    flex: 0 0 442px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: $white;
+
+    &:hover{
+      color: $white;
+
+      .staging-header{
+        opacity: 0;
+      }
+
+      .staging-footer::before{
+        opacity: 1;
+      }
+    }
+  }
+
+  &-header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black,0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.6s;
+    z-index: 2;
+  }
+
+  &-name{
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &-date{
+    display: block;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform-origin: 10px 10px;
+    transform: rotate(-90deg);
+  }
+
+  &-footer{
+    position: relative;
+
+    &::before{
+      content: '';
+      background-color: $gold;
+      background-image: url(../img/search.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      transition: opacity 0.6s;
+    }
+
+    img{
+      width: 442px;
+      height: 550px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .staging{
+    padding-bottom: 90px;
+
+    &-list{
+      margin: 0 39px;
+    }
+
+
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .staging{
+    padding-bottom: 150px;
+
+    &-title{
+      margin-bottom: 100px;
+    }
+
+    &-list{
+      width: 690px;
+      margin-left: 19%;
+      margin-right: 10.22%;
+    }
+
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .staging{
+
+    &-list{
+      width: auto;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+
+  }
+
+}
+
+@media (min-width: 1900px) {
+
+  .staging{
+
+    &-list{
+      justify-content: flex-end;
+    }
+
+  }
+
+}
+
+

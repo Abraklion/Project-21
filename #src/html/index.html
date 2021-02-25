@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Стили галереи bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Стили галереи Baguettebox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css" integrity="sha512-NVt7pmp5f+3eWRPO1h4A1gCf4opn4r5z2wS1mi7AaVcTzE9wDJ6RzMqSygjDzYHLp+mAJ2/qzXXDHar6IQwddQ==" crossorigin="anonymous" />
+  <!-- Стили разработки -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Большой театр</title>
+</head>
+
+<body>
+
+  <h1 class="visually-hidden">Санктперербурский Большой театр</h1>
+
+  <div class="first-screen">
+
+    <!-- 0 .menu-fixed -->
+    @@include('blocks/menu-fixed.html')
+
+    <!-- 1 .header -->
+    @@include('blocks/header.html')
+
+    <!-- 2 .poster -->
+    @@include('blocks/poster.html')
+
+  </div><!-- /.first-screen -->
+
+  <main>
+
+    <!-- 3 .theatre-info -->
+    @@include('blocks/theatre-info.html')
+
+    <!-- 4 .staging -->
+    @@include('blocks/staging.html')
+
+    <!-- 5 .critics -->
+    @@include('blocks/critics.html')
+
+    <!-- 6 .company -->
+    @@include('blocks/company.html')
+
+    <!-- 7 .contacts -->
+    @@include('blocks/contacts.html')
+
+  </main>
+
+  <!-- 8 .footer -->
+  @@include('blocks/footer.html')
+
+  <!-- 9 .social-box -->
+  @@include('blocks/social-box.html')
+
+  <!-- bootstrap5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <!-- Галерея baguetteBox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" integrity="sha512-7KzSt4AJ9bLchXCRllnyYUDjfhO2IFEWSa+a5/3kPGQbr+swRTorHQfyADAhSlVHCs1bpFdB1447ZRzFyiiXsg==" crossorigin="anonymous"></script>
+
+  <!-- Скрипты разработки -->
+  <script defer src="js/all.min.js"></script>
+</body>
+
+</html>

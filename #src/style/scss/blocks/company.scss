@@ -1,0 +1,70 @@
+
+.company{
+  background-color: $black;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  &-title{
+    @extend %title;
+    margin-bottom: 60px;
+  }
+
+  &-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-gap: 80px 78px;
+  }
+
+  &-item{
+
+    img{
+      width: 200px;
+      height: 96px;
+      display: block;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+
+  .company{
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .company{
+    margin-top: 150px;
+    margin-bottom: 120px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .company{
+
+    &-list{
+      grid-template-columns: repeat(4,1fr);
+      justify-items: center;
+    }
+
+  }
+
+}
+
+

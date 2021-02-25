@@ -1,0 +1,36 @@
+
+.first-screen{
+  position: relative;
+  background-color: $black;
+  background-image: url(../img/first-screen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($black,0.85);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .first-screen{
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .first-screen{
+    min-height: 900px;
+  }
+}

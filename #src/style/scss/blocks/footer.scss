@@ -1,0 +1,42 @@
+
+.footer{
+  font-size: 12px;
+  line-height: 18px;
+  color: #989898;
+
+
+  &-inner{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #565656;
+  }
+
+  p{
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .footer{
+
+    p{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  .footer{
+
+    p{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+}

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import "fonts";
+@import "normalize"; // normalize / reset
+@import "variables";
+@import "function";
+@import "mixins";
+@import "core";
+@import "animations";
+
+
+// .first-screen
+@import "blocks/first-screen";
+
+// .menu-fixed
+@import "blocks/menu-fixed";
+
+// .menu
+@import "blocks/menu";
+
+// .social
+@import "blocks/social";
+
+// .feedback
+@import "blocks/feedback";
+
+// .address
+@import "blocks/address";
+
+
+// 1 .header
+@import "blocks/header";
+
+// 2 .poster
+@import "blocks/poster";
+
+// 3 .theatre-info
+@import "blocks/theatre-info";
+
+// 4 .staging
+@import "blocks/staging";
+
+// 5 .critics
+@import "blocks/critics";
+
+// 6 .company
+@import "blocks/company";
+
+// 7 .contacts
+@import "blocks/contacts";
+
+// 8 .footer
+@import "blocks/footer";
+
+// 9 .social-box
+@import "blocks/social-box";
+

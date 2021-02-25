@@ -1,0 +1,110 @@
+
+.theatre-info{
+  background-color: $black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &-title{
+    @extend %title;
+    margin-bottom: 60px;
+  }
+
+  &-subtitle{
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &-text{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-list{
+    @extend %list;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-item:not(:last-child){
+    margin-right: 60px;
+  }
+
+  &-icon{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &-item-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    margin: 0;
+
+    b{
+      color: $gold;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .theatre-info{
+
+    &-subtitle{
+      text-align: left;
+    }
+
+    &-text{
+      text-align: left;
+    }
+
+    &-list{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+
+    &-item{
+      margin-bottom: 25px;
+    }
+
+    &-item:last-child{
+      margin-bottom: 0;
+    }
+
+    &-item:not(:last-child){
+      margin-right: 0;
+    }
+
+    &-img{
+      display: block;
+      width: 350px;
+      height: 292px;
+      margin-left: auto;
+    }
+
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .theatre-info{
+
+    &-title{
+      margin-bottom: 100px;
+    }
+  }
+
+}

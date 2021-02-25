@@ -1,0 +1,150 @@
+
+.poster{
+  position: relative;
+  z-index: 2;
+
+  &-inner{
+    padding-top: 100px;
+  }
+
+  &-title{
+    font-weight: 700;
+    font-size: 64px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &-text{
+    color: $white;
+    margin-bottom: 50px;
+  }
+
+  &-link{
+    @extend %button;
+    min-width: 160px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .poster{
+
+    &-inner{
+      padding-top: 174px;
+    }
+
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .poster{
+
+    &-inner{
+      padding-top: 236px;
+    }
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .poster{
+
+    &-inner{
+      padding-top: 195px;
+      justify-content: space-between;
+    }
+
+    &-description{
+      padding-top: 110px;
+    }
+
+    &-carousel{
+
+      img{
+        display: block;
+        width: 350px;
+        height: 490px;
+        object-fit: cover;
+      }
+
+      .carousel{
+        width: 370px;
+        height: 510px;
+      }
+
+      .carousel-item{
+        width: 370px;
+        height: 510px;
+        position: relative;
+      }
+
+      .substrate{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 350px;
+        height: 490px;
+        top: 0;
+        left: 0;
+        transform: translate(20px,20px);
+        z-index: -1;
+
+        &::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background-color: rgba($gold, 0.85);
+        }
+      }
+
+      .carousel-control-prev, .carousel-control-next{
+        height: auto;
+        top: auto;
+        bottom: -67px;
+        font-weight: 700;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .carousel-control-prev{
+        left: 30px;
+      }
+
+      .carousel-control-next{
+        right: 30px;
+      }
+
+      .poster-back{
+        padding-left: 65px;
+        background-image: url(../img/arrowL.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+      }
+
+      .poster-forward{
+        padding-right: 65px;
+        background-image: url(../img/arrowR.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+      }
+
+
+    }
+
+  }
+
+}

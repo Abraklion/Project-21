@@ -1,0 +1,55 @@
+
+.contacts{
+  margin-top: 80px;
+  margin-bottom: 60px;
+
+  &-title{
+    @extend %title;
+    margin-bottom: 60px;
+  }
+
+  &-feedback{
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .contacts{
+    margin-top: 90px;
+
+    &-feedback{
+      margin-bottom: 60px;
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .contacts{
+    margin-top: 120px;
+    margin-bottom: 80px;
+
+    &-title{
+      margin-bottom: 100px;
+    }
+
+    &-feedback{
+      margin-bottom: 80px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .contacts{
+
+    &-feedback{
+      margin-bottom: 0;
+    }
+  }
+
+}

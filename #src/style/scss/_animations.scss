@@ -1,0 +1,13 @@
+
+//-----===== Анимация ====-----//
+
+@keyframes menu-fixed {
+  from {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
